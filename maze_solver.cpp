@@ -109,6 +109,8 @@ int main() {
     }
 
     //prints out the shortest path
+    cout << "Original: " << endl;
+    printMaze(originalCopy);
     for(int i = 0; i < steps.size(); i++){
         originalCopy[steps[i][1]][steps[i][0]] = 'X';
     }
